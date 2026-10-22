@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio dan Dashboard Interaktif Afwa Chandra Pratama - Mahasiswa Sistem Informasi & Operational Supervisor F&B.">
+    <title>Portfolio & Dashboard - Afwa Chandra Pratama</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Afwa Pratama</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#calculator">Kalkulator</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                            <button id="darkModeToggle" class="btn btn-outline-light btn-sm">
+                                <i class="bi bi-moon-fill" id="themeIcon"></i> Mode
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container my-5 pt-5">
+
+        <!-- HERO SECTION -->
+        <section id="about" class="row align-items-center py-5">
+            <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                <h1 class="display-5 fw-bold mb-3">Halo, Saya Afwa Chandra Pratama</h1>
+                <p class="lead text-muted mb-4">Mahasiswa Sistem Informasi & Operational Supervisor F&B yang memiliki ketertarikan mendalam pada pengembangan web, manajemen sistem, dan otomatisasi proses bisnis.</p>
+                <a href="#projects" class="btn btn-primary btn-lg me-2 shadow-sm"><i class="bi bi-folder2-open"></i> Lihat Proyek</a>
+                <a href="#contact" class="btn btn-outline-secondary btn-lg"><i class="bi bi-envelope"></i> Hubungi Saya</a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="p-3 bg-white shadow rounded-4 border">
+                    <img src="img/Afwa.png" alt="Foto Profil Afwa Chandra Pratama" class="img-fluid rounded-3 w-100" style="height: 380px; object-fit: cover; object-position: center 45%;" onerror="this.src='https://via.placeholder.com/400x350?text=Afwa+Chandra+Pratama'">
+                        <div class="mt-3 text-center">
+                        <h5><i class="bi bi-mortarboard-fill text-primary"></i> Universitas Nusantara PGRI Kediri</h5>
+                        <p class="text-muted small mb-0">Program Studi Sistem Informasi (NPM: 2513020078)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- PROJECTS / SHOWCASE SECTION -->
+        <section id="projects" class="py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Showcase Proyek</h2>
+                <p class="text-muted">Beberapa proyek pengembangan sistem dan aplikasi yang pernah dikerjakan.</p>
+                <!-- Filter Tombol -->
+                <div class="btn-group mt-3" role="group">
+                    <button type="button" class="btn btn-outline-dark active filter-btn" data-filter="all">Semua</button>
+                    <button type="button" class="btn btn-outline-dark filter-btn" data-filter="web">Web Dev</button>
+                    <button type="button" class="btn btn-outline-dark filter-btn" data-filter="system">Sistem & Bisnis</button>
+                </div>
+            </div>
+
+            <div class="row g-4" id="projectList">
+                <!-- Project 1 -->
+                <div class="col-md-4 project-item" data-category="web">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Web Dev</span>
+                            <h5 class="card-title fw-bold">Inventory Tracker</h5>
+                            <p class="card-text text-muted small">Aplikasi web interaktif berbasis JavaScript untuk melakukan pencatatan, penambahan, dan penghapusan daftar data barang secara dinamis.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="file:///C:/Users/afwap/OneDrive/TUGAS%20WEB%20AFWA%20KELAS%202%20C/App_ToDolist/index.html" target="_blank" class="btn btn-sm btn-primary w-100">
+    <i class="bi bi-globe"></i> Lihat Website
+</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4 project-item" data-category="system">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Sistem & Bisnis</span>
+                            <h5 class="card-title fw-bold">Pemodelan Proses Bisnis (BPMN)</h5>
+                            <p class="card-text text-muted small">Perancangan diagram alur kerja operasional menggunakan Bizagi Modeler.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="img/BPMN.png" class="btn btn-sm btn-dark w-100"><i class="bi bi-file-earmark-text"></i> Detail Dokumen</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4 project-item" data-category="web">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Web Dev</span>
+                            <h5 class="card-title fw-bold">Personal Portfolio Website</h5>
+                            <p class="card-text text-muted small">Website portofolio responsif yang menampilkan profil profesional, daftar proyek pemrograman web, serta pemodelan proses bisnis (BPMN).</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="#" class="btn btn-sm btn-dark w-100"><i class="bi bi-github"></i> Repositori</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- INTERACTIVE CALCULATOR SECTION -->
+        <section id="calculator" class="py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card shadow border-0 p-4 rounded-4">
+                        <h3 class="fw-bold text-center mb-3"><i class="bi bi-calculator text-primary"></i> Kalkulator Estimasi Biaya Proyek</h3>
+                        <p class="text-muted text-center small mb-4">Hitung estimasi anggaran pengembangan proyek web atau sistem berdasarkan kompleksitas.</p>
+                        
+                        <form id="costForm">
+                            <div class="mb-3">
+                                <label for="projectType" class="form-label fw-semibold">Jenis Layanan / Proyek</label>
+                                <select class="form-select" id="projectType" required>
+                                    <option value="" selected disabled>Pilih jenis proyek...</option>
+                                    <option value="1500000">Landing Page / Portfolio (Rp 1.500.000)</option>
+                                    <option value="3500000">Dashboard / Sistem Informasi (Rp 3.500.000)</option>
+                                    <option value="6000000">Custom Web App & Integrasi (Rp 6.000.000)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="projectDuration" class="form-label fw-semibold">Estimasi Waktu Pengerjaan (Hari)</label>
+                                <input type="number" class="form-control" id="projectDuration" placeholder="Contoh: 14" min="1" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-2 fw-bold shadow-sm">Hitung Estimasi Biaya</button>
+                        </form>
+
+                        <div id="calcResult" class="alert alert-success mt-4 d-none text-center" role="alert">
+                            <h5 class="alert-heading fw-bold mb-1">Hasil Estimasi</h5>
+                            <p id="resultText" class="mb-0 fs-5"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- CONTACT SECTION WITH FORM VALIDATION -->
+        <section id="contact" class="py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card shadow-sm border-0 p-4 rounded-4">
+                        <h3 class="fw-bold text-center mb-3"><i class="bi bi-chat-dots-fill text-primary"></i> Hubungi Saya</h3>
+                        <p class="text-muted text-center small mb-4">Ada pertanyaan atau kolaborasi menarik? Silakan kirim pesan melalui form di bawah ini.</p>
+                        
+                        <form id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-semibold">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+                                <div class="invalid-feedback">Nama wajib diisi.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Alamat Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="nama@email.com" required>
+                                <div class="invalid-feedback">Masukkan alamat email yang valid.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-semibold">Pesan</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Tuliskan pesan Anda..." required></textarea>
+                                <div class="invalid-feedback">Pesan tidak boleh kosong.</div>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100 py-2 fw-bold">Kirim Pesan</button>
+                        </form>
+                        <div id="formAlert" class="alert alert-success mt-3 d-none text-center" role="alert">
+                            Pesan Anda berhasil disimulasikan terkirim! Terima kasih telah menghubungi.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Afwa Chandra Pratama. Universitas Nusantara PGRI Kediri.</p>
+            <p class="small text-muted mb-0">Ujian Tengah Semester - Pemrograman Web</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
